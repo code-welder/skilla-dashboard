@@ -1,0 +1,22 @@
+.core {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+.in {
+  &.success {
+    color: hsl(var(--color-hsl-success));
+  }
+}
+.out {
+  transform: rotate(180deg);
+  &.success {
+    color: hsl(var(--color-hsl-info));
+  }
+}
+.failed {
+  color: hsl(var(--color-hsl-error));
+}

@@ -1,0 +1,24 @@
+.core,
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: hsl(var(--color-hsl-icon));
+}
+.link {
+  &:hover {
+    .icon {
+      opacity: 1;
+    }
+  }
+  .icon {
+    opacity: 0;
+  }
+}

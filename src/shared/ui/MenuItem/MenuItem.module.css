@@ -1,0 +1,24 @@
+.core {
+  padding: 10px 20px;
+
+  &:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  &:last-child {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+  &:not(.custom) {
+    color: hsl(212, 20%, 62%);
+    cursor: pointer;
+    &.active {
+      color: hsl(var(--color-hsl-primary));
+      pointer-events: none;
+    }
+  }
+  &:not(.custom):hover {
+    background-color: hsl(var(--color-hue-primary) 100% 49% / 0.15);
+    color: hsl(var(--text-color-hsl-primary));
+  }
+}

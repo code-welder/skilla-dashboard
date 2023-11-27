@@ -1,0 +1,28 @@
+.core {
+  width: max-content;
+}
+.toggler {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: hsl(var(--text-color-hsl-secondary));
+
+  &:hover,
+  &:hover .arrow,
+  &.active,
+  &.active .arrow {
+    color: hsl(var(--color-hsl-primary));
+  }
+  &.notDefault {
+    .value {
+      color: hsl(var(--color-hsl-primary));
+    }
+  }
+}
+.arrow {
+  color: hsl(var(--color-hsl-icon));
+}
+.popover {
+  min-width: 200px;
+}

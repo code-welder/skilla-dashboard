@@ -1,0 +1,30 @@
+.core {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 64px 1fr;
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+.topLeft,
+.left {
+  background-color: hsl(227, 71%, 12%);
+  grid-column: 1/2;
+}
+.topRight,
+.right {
+  grid-column: 2/-1;
+}
+.topRight {
+  background-color: hsl(var(--color-hsl-white));
+  box-shadow: 0px 4px 5px 0px #e9edf3;
+}
+.right {
+  padding-bottom: 120px;
+}
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}

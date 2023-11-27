@@ -1,0 +1,20 @@
+.core {
+  width: max-content;
+  margin-top: 8px;
+  gap: 30px;
+  display: flex;
+  color: hsl(var(--color-hsl-icon));
+}
+.dates {
+  display: flex;
+}
+.customInput {
+  &:empty::before {
+    display: inline-block;
+    content: "__.__.__";
+  }
+}
+.icon {
+  flex-shrink: 0;
+  margin-left: auto;
+}

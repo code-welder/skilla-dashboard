@@ -1,0 +1,27 @@
+:root {
+  --color-hsl-white: 0 0% 100%;
+  --color-hsl-black: 213 59% 17%;
+
+  --color-hue-primary: 217;
+  --color-hue-yellow: 50;
+  --color-hue-icon: 218;
+
+  --color-hsl-primary: var(--color-hue-primary) 100% 49%;
+  --color-hsl-yellow: var(--color-hue-yellow) 100% 50%;
+  --color-hsl-green: 158 62% 41%;
+  --color-hsl-red: 345 83% 51%;
+  --color-hsl-blue: 217 100% 50%;
+
+  --color-hsl-blue-light: var(--color-hue-primary) 40% 96%;
+
+  --color-hsl-warning: var(--color-hsl-yellow);
+  --color-hsl-success: var(--color-hsl-green);
+  --color-hsl-error: var(--color-hsl-red);
+  --color-hsl-info: var(--color-hsl-blue);
+
+  --color-hsl-icon: var(--color-hue-icon) 44% 78%;
+
+  --text-color-hsl-primary: var(--color-hsl-black);
+  --text-color-hsl-secondary: 212 22% 47%;
+  --body-bg: hsl(var(--color-hsl-blue-light));
+}

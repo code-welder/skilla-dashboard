@@ -1,0 +1,11 @@
+.core {
+  padding: 20px 0;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom {
+  margin-top: 42px;
+}

@@ -1,0 +1,50 @@
+.core {
+  --color: hsl(var(--color-hsl-icon));
+
+  width: 16px;
+  height: 16px;
+  position: relative;
+
+  &:hover {
+    &:before {
+      --color: hsl(var(--color-hsl-primary));
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--color);
+    border-radius: 2px;
+  }
+
+  &.ch {
+    --color: hsl(var(--color-hsl-primary));
+
+    &:before {
+      background-color: var(--color);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 33%;
+      width: 6px;
+      height: 10px;
+      border-bottom: 2px solid hsl(var(--color-hsl-white));
+      border-right: 2px solid hsl(var(--color-hsl-white));
+      transform: rotate(45deg);
+    }
+  }
+}
+.inp {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}

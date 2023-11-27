@@ -1,0 +1,12 @@
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.qualityErr {
+  color: hsl(var(--color-hsl-error));
+  font-size: 14px;
+}

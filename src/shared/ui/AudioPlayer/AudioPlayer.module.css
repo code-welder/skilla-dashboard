@@ -1,0 +1,44 @@
+.core {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 48px;
+  background-color: hsl(218, 62%, 95%);
+}
+.play {
+  width: 24px;
+  height: 24px;
+
+  margin: 0 8px 0 12px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: hsl(var(--color-hsl-white));
+  color: hsl(var(--color-hsl-primary));
+}
+.bar {
+  position: relative;
+  width: 160px;
+  height: 4px;
+  margin-right: 18px;
+  border-radius: 2px;
+  background-color: hsl(var(--color-hsl-icon));
+  overflow: hidden;
+}
+.barFill {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: hsl(var(--color-hsl-primary));
+}
+.icon {
+  display: inline-flex;
+  color: hsl(var(--color-hsl-icon));
+  &:hover {
+    color: hsl(var(--color-hsl-primary));
+  }
+}

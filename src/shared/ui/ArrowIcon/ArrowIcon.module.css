@@ -1,0 +1,13 @@
+.core {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.top {
+  transform: rotate(-90deg);
+}
+.bottom {
+  transform: rotate(90deg);
+}
+.left {
+  transform: rotate(180deg);
+}
