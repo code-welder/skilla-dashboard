@@ -68,6 +68,7 @@ export const DateFilter = ({ onChange }: Props) => {
   };
   const handleCustomDateClick = () => {
     if (Boolean(customDates.start && customDates.end)) {
+      setSelectedDates(customDates);
       handleMenuItemClick(4)();
       printCustomDates();
       triggerOnChange();
