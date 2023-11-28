@@ -39,6 +39,15 @@ const nextConfig = {
                     },
                   },
                 },
+                {
+                  name: "prefixIds",
+                  params: {
+                    overrides: {
+                      prefixIds: true,
+                      prefixClassNames: true,
+                    },
+                  },
+                },
               ],
             },
           },
