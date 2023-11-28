@@ -11,13 +11,14 @@ export const Nav = () => {
     <nav>
       <ul className={styles.core}>
         {navList.map((navItem) => (
-          <NavItem
-            key={navItem.link}
-            link={navItem.link}
-            title={navItem.title}
-            icon={<navItem.icon />}
-            isActive={navItem.link === pathname}
-          />
+          <li key={navItem.link}>
+            <NavItem
+              link={navItem.link}
+              title={navItem.title}
+              icon={<navItem.icon />}
+              isActive={navItem.link === pathname}
+            />
+          </li>
         ))}
       </ul>
     </nav>

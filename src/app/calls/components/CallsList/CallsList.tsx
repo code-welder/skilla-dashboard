@@ -13,16 +13,18 @@ export const CallsList = ({ title, calls = [] }: Props) => {
   return (
     <div className={clsx(styles.core, title && styles.withTitle)}>
       {title && (
-        <div className={styles.top}>
+        <p className={styles.top}>
           {title}
           <span className={styles.count}>{calls.length}</span>
-        </div>
+        </p>
       )}
-      <div>
+      <ul>
         {calls.map((call) => (
-          <CallsListItem key={call.id} call={call} />
+          <li key={call.id}>
+            <CallsListItem call={call} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
